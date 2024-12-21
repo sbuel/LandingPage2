@@ -20,6 +20,35 @@
         <!-- React Calculator Section -->
         <div id="react-calculator" class="mt-10"></div>
 
+        <!-- Email Capture Form -->
+        <div class="mt-10 bg-white shadow rounded-lg p-6">
+            <h2 class="text-lg font-bold text-gray-900 text-center">Stay Updated</h2>
+            <p class="text-sm text-gray-600 text-center mt-2">
+                Subscribe to our mailing list to get updates, tips, and exclusive offers.
+            </p>
+            <form class="mt-4" action="https://formsubmit.co/your-email@example.com" method="POST">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required 
+                        class="flex-1 px-4 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                    />
+                    <button 
+                        type="submit" 
+                        class="mt-2 sm:mt-0 px-4 py-2 bg-indigo-600 text-white font-medium rounded-md shadow-sm hover:bg-indigo-700"
+                    >
+                        Subscribe
+                    </button>
+                </div>
+                <!-- Optional Honeypot for spam protection -->
+                <input type="hidden" name="_honey" style="display:none;">
+                <!-- Optional Redirect -->
+                <input type="hidden" name="_next" value="https://your-redirect-page.example.com">
+            </form>
+        </div>
+
         <div class="mt-10">
             <div class="bg-white shadow overflow-hidden sm:rounded-lg">
                 <div class="px-4 py-5 sm:px-6">
